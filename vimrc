@@ -60,11 +60,6 @@ inoremap <C-Space> <C-X><C-O>
 nmap <C-Q> :TlistToggle<cr>
 map <C-Q> :TlistToggle<cr>
 imap <C-Q> <ESC>:TlistToggle<cr>
-"python stuff
-let python_highlight_all = 1
-" highlight end of line whitespace
-highlight WhitespaceEOL ctermbg=red guibg=red
-match WhitespaceEOL /\s\+$/
 " Generate tags with: ctags -R -f ~/.vim/tags/python24.ctags /usr/lib/python2.4/
 " ctrl-[ to go to the tag under the cursor, ctrl-T to go back.
 " set tags+=$HOME/.vim/tags/python24.ctags

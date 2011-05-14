@@ -6,7 +6,7 @@ hi ExtraWhitespace guibg=#CCCCCC
 "auto open NERDtree on new tabs
 autocmd VimEnter * NERDTree
 autocmd BufEnter * NERDTreeMirror
-autocmd VimEnter * wincmd l
+autocmd VimEnter * wincmd p
 let g:NERDTreeChDirMode=2 " change pwd when NERDTree root changes
 let g:NERDChristmasTree=1 " more colorful NERDTree
 IndentGuidesToggle

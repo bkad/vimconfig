@@ -73,6 +73,10 @@ function TrimWhiteSpace()
 map <F2> :call TrimWhiteSpace()<CR>
 map! <F2> :call TrimWhiteSpace()<CR>
 
+" auto close scratch window after omnifunc preview
+autocmd CursorMovedI * if pumvisible() == 0|pclose|endif 
+autocmd InsertLeave * if pumvisible() == 0|pclose|endif
+
 " If you want, you can have whitespace cleaned up automatically on write
 " Uncomment to enable white space removal on write
 "autocmd FileWritePre *   :call TrimWhiteSpace()

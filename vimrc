@@ -1,8 +1,5 @@
 set nocompatible
 set autoindent
-" only works for C
-" set smartindent
-" set virtualedit=all
 set smarttab
 set expandtab
 set tabstop=2
@@ -18,7 +15,6 @@ filetype off
 filetype plugin indent on
 syntax enable
 nmap <C-J> vip=
-"au CursorMovedI,InsertLeave * if pumvisible() == 0|silent! pclose|endif=
 set showmatch
 set guioptions-=T
 set vb t_vb=
@@ -43,27 +39,23 @@ sunmap w
 sunmap W
 sunmap e
 
+" remap the Home key to behave like ^
 map <Home> ^
 imap <Home> <Esc>^i
-" tab navigation like firefox
+
+" tab navigation
 nmap <C-S-tab> :tabprevious<cr>
 nmap <C-tab> :tabnext<cr>
 map <C-S-tab> :tabprevious<cr>
 map <C-tab> :tabnext<cr>
 imap <C-S-tab> <ESC>:tabprevious<cr>i
 imap <C-tab> <ESC>:tabnext<cr>i
-"nmap <C-t> :tabnew<cr>
-"imap <C-t> <ESC>:tabnew<cr>
-" Remap omni-complete to avoid having to type so fast
+nmap <C-t> :tabnew<cr>
+imap <C-t> <ESC>:tabnew<cr>
+
+" Remap omni-complete
 inoremap <C-Space> <C-X><C-O>
-" TagList window toggle
-nmap <C-Q> :TlistToggle<cr>
-map <C-Q> :TlistToggle<cr>
-imap <C-Q> <ESC>:TlistToggle<cr>
-" Generate tags with: ctags -R -f ~/.vim/tags/python24.ctags /usr/lib/python2.4/
-" ctrl-[ to go to the tag under the cursor, ctrl-T to go back.
-" set tags+=$HOME/.vim/tags/python24.ctags
-" Removes trailing spaces
+
 function TrimWhiteSpace()
   %s/\s*$//
   ''
@@ -76,10 +68,3 @@ map! <F2> :call TrimWhiteSpace()<CR>
 " auto close scratch window after omnifunc preview
 autocmd CursorMovedI * if pumvisible() == 0|pclose|endif 
 autocmd InsertLeave * if pumvisible() == 0|pclose|endif
-
-" If you want, you can have whitespace cleaned up automatically on write
-" Uncomment to enable white space removal on write
-"autocmd FileWritePre *   :call TrimWhiteSpace()
-"autocmd FileAppendPre *  :call TrimWhiteSpace()
-"autocmd FilterWritePre * :call TrimWhiteSpace()
-"autocmd BufWritePre *    :call TrimWhiteSpace()

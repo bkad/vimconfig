@@ -4,9 +4,9 @@ let &colorcolumn = &wrapmargin
 hi ColorColumn guibg=#4E4E4E
 hi ExtraWhitespace guibg=#CCCCCC
 "auto open NERDtree on new tabs
-autocmd VimEnter * NERDTree
-autocmd BufEnter * NERDTreeMirror
-autocmd VimEnter * wincmd p
+"autocmd VimEnter * NERDTree
+"autocmd BufEnter * NERDTreeMirror
+"autocmd VimEnter * wincmd p
 let g:NERDTreeChDirMode=2 " change pwd when NERDTree root changes
 let g:NERDChristmasTree=1 " more colorful NERDTree
 IndentGuidesToggle

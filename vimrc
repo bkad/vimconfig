@@ -68,3 +68,7 @@ map! <F2> :call TrimWhiteSpace()<CR>
 " auto close scratch window after omnifunc preview
 autocmd CursorMovedI * if pumvisible() == 0|pclose|endif 
 autocmd InsertLeave * if pumvisible() == 0|pclose|endif
+
+"vim clojure
+let g:clj_highlight_builtins=1
+let g:clj_paren_rainbow=1

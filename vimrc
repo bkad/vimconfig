@@ -70,5 +70,5 @@ autocmd CursorMovedI * if pumvisible() == 0|pclose|endif
 autocmd InsertLeave * if pumvisible() == 0|pclose|endif
 
 "vim clojure
-let g:clj_highlight_builtins=1
-let g:clj_paren_rainbow=1
+let vimclojure#HighlightBuiltins=1
+let vimclojure#ParenRainbow=1

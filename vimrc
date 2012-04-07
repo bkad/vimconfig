@@ -72,3 +72,6 @@ autocmd InsertLeave * if pumvisible() == 0|pclose|endif
 "vim clojure
 let vimclojure#HighlightBuiltins=1
 let vimclojure#ParenRainbow=1
+
+let g:ctrlp_working_path_mode = 0
+set wildignore+=*/node_modules/*,*.swp,*.swo,*.swn,*.pyc

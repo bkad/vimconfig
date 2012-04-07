@@ -74,4 +74,7 @@ let vimclojure#HighlightBuiltins=1
 let vimclojure#ParenRainbow=1
 
 let g:ctrlp_working_path_mode = 0
-set wildignore+=*/node_modules/*,*.swp,*.swo,*.swn,*.pyc
+set wildignore+=*.swp,*.swo,*.swn,*.pyc
+let g:ctrlp_custom_ignore = {
+  \ 'dir': '\.git$\|\.hg$\|\.svn$\|node_modules$',
+  \ }

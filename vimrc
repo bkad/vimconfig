@@ -73,7 +73,9 @@ autocmd InsertLeave * if pumvisible() == 0|pclose|endif
 let vimclojure#HighlightBuiltins=1
 let vimclojure#ParenRainbow=1
 
+" start ctrlp from the working directory
 let g:ctrlp_working_path_mode = 0
+let g:ctrlp_follow_symlinks = 1
 set wildignore+=*.swp,*.swo,*.swn,*.pyc
 let g:ctrlp_custom_ignore = {
   \ 'dir': '\.git$\|\.hg$\|\.svn$\|node_modules$',

@@ -72,6 +72,8 @@ autocmd InsertLeave * if pumvisible() == 0|pclose|endif
 "vim clojure
 let vimclojure#HighlightBuiltins=1
 let vimclojure#ParenRainbow=1
+"let vimclojure#DynamicHighlighting=1
+let vimclojure#FuzzyIndent = 1
 
 " start ctrlp from the working directory
 let g:ctrlp_working_path_mode = 0

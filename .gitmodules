@@ -43,3 +43,6 @@
 [submodule "bundle/vim-markdown"]
 	path = bundle/vim-markdown
 	url = https://github.com/tpope/vim-markdown.git
+[submodule "bundle/vim-go-templates"]
+	path = bundle/vim-go-templates
+	url = https://github.com/cespare/vim-go-templates.git

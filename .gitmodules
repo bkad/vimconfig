@@ -43,3 +43,6 @@
 [submodule "bundle/vim-go-templates"]
 	path = bundle/vim-go-templates
 	url = https://github.com/cespare/vim-go-templates.git
+[submodule "bundle/vim-stylus"]
+	path = bundle/vim-stylus
+	url = https://github.com/bkad/vim-stylus.git

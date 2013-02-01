@@ -66,7 +66,7 @@ map <F2> :call TrimWhiteSpace()<CR>
 map! <F2> :call TrimWhiteSpace()<CR>
 
 " auto close scratch window after omnifunc preview
-autocmd CursorMovedI * if pumvisible() == 0|pclose|endif 
+autocmd CursorMovedI * if pumvisible() == 0|pclose|endif
 autocmd InsertLeave * if pumvisible() == 0|pclose|endif
 
 " start ctrlp from the working directory
@@ -76,3 +76,34 @@ set wildignore+=*.swp,*.swo,*.swn,*.pyc
 let g:ctrlp_custom_ignore = {
   \ 'dir': '\.git$\|\.hg$\|\.svn$\|node_modules$\|\.sass\-cache$',
   \ }
+
+
+" colors from https://github.com/Flowdalic/zenburn-emacs/blob/master/zenburn-theme.el
+" red-4
+" blue+1
+" green+2
+" yellow-2
+" magenta
+" orange
+" blue-1
+" green+1
+" red+1
+" blue+1
+" yellow
+" FIRST cyan
+let g:rbpt_colorpairs = [
+    \ ['darkred',   '#8c5353'],
+    \ ['darkcyan',  '#94bff3'],
+    \ ['darkgreen', '#9fc59f'],
+    \ ['darkblue',  '#d0bf8f'],
+    \ ['gray',      '#dc8cc3'],
+    \ ['darkred',   '#dfaf8f'],
+    \ ['gray',      '#7cb8bb'],
+    \ ['darkred',   '#8fb28f'],
+    \ ['darkcyan',  '#dca3a3'],
+    \ ['darkgreen', '#94bff3'],
+    \ ['darkblue',  '#f0dfaf'],
+    \ ['gray',      '#93e0e3'],
+    \ ]
+
+let g:rbpt_max = len(g:rbpt_colorpairs)

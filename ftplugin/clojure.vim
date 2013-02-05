@@ -1,4 +1,5 @@
-au VimEnter *.clj RainbowParenthesesToggle
-au Syntax *.clj RainbowParenthesesLoadRound
-au Syntax *.clj RainbowParenthesesLoadSquare
-au Syntax *.clj RainbowParenthesesLoadBraces
+call rainbow_parentheses#activate()
+au Syntax * RainbowParenthesesLoadRound
+au Syntax * RainbowParenthesesLoadSquare
+au Syntax * RainbowParenthesesLoadBraces
+

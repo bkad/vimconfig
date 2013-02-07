@@ -107,3 +107,11 @@ let g:rbpt_colorpairs = [
     \ ]
 
 let g:rbpt_max = len(g:rbpt_colorpairs)
+
+" Go specific settings
+augroup go
+  au!
+  au FileType go setlocal noexpandtab
+augroup END
+
+noremap <Space> :call NERDComment("n", "Toggle")<cr>

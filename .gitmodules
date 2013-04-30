@@ -37,9 +37,6 @@
 [submodule "bundle/ctrlp"]
 	path = bundle/ctrlp
 	url = https://github.com/kien/ctrlp.vim.git
-[submodule "bundle/vim-markdown"]
-	path = bundle/vim-markdown
-	url = https://github.com/tpope/vim-markdown.git
 [submodule "bundle/vim-go-templates"]
 	path = bundle/vim-go-templates
 	url = https://github.com/cespare/vim-go-templates.git

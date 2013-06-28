@@ -74,7 +74,7 @@ let g:ctrlp_working_path_mode = 0
 let g:ctrlp_follow_symlinks = 1
 set wildignore+=*.swp,*.swo,*.swn,*.pyc
 let g:ctrlp_custom_ignore = {
-  \ 'dir': '\.git$\|\.hg$\|\.svn$\|node_modules$\|\.sass\-cache$',
+  \ 'dir': '\.git$\|\.hg$\|\.svn$\|node_modules$\|\.sass\-cache$\|components$',
   \ }
 
 

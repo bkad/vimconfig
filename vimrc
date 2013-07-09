@@ -7,7 +7,7 @@ set shiftwidth=2
 set textwidth=110
 let &wrapmargin = &textwidth
 set formatoptions=cqrol
-"filetype plugin on
+filetype plugin on
 set ofu=syntaxcomplete#Complete
 
 call pathogen#runtime_append_all_bundles()
@@ -31,6 +31,9 @@ hi IncSearch guifg=NONE guibg=#545449
 hi Search    guifg=NONE guibg=#545449
 hi Visual    guifg=NONE guibg=#444444
 hi VisualNOS guifg=NONE guibg=#444444
+
+"adjust YCM menu
+hi Pmenu guifg=NONE guibg=#444444
 
 map <silent> w <Plug>CamelCaseMotion_w
 map <silent> W <Plug>CamelCaseMotion_b
@@ -64,6 +67,7 @@ function TrimWhiteSpace()
 " Map the F2 key to the clean white space command
 map <F2> :call TrimWhiteSpace()<CR>
 map! <F2> :call TrimWhiteSpace()<CR>
+
 
 " auto close scratch window after omnifunc preview
 autocmd CursorMovedI * if pumvisible() == 0|pclose|endif
@@ -115,3 +119,18 @@ augroup go
 augroup END
 
 noremap <Space> :call NERDComment("n", "Toggle")<cr>
+
+" Add the virtualenv's site-packages to vim path
+if has('python')
+py << EOF
+import os.path
+import sys
+import vim
+if 'VIRTUAL_ENV' in os.environ:
+    project_base_dir = os.environ['VIRTUAL_ENV']
+    sys.path.insert(0, project_base_dir)
+    activate_this = os.path.join(project_base_dir, 'bin/activate_this.py')
+    execfile(activate_this, dict(__file__=activate_this))
+EOF
+endif
+

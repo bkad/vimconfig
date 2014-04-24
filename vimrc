@@ -7,8 +7,8 @@ set shiftwidth=2
 set textwidth=110
 let &wrapmargin = &textwidth
 set formatoptions=cqrol
-filetype plugin on
-set ofu=syntaxcomplete#Complete
+"filetype plugin on
+"set ofu=syntaxcomplete#Complete
 
 call pathogen#runtime_append_all_bundles()
 filetype off
@@ -57,7 +57,7 @@ nmap <C-t> :tabnew<cr>
 imap <C-t> <ESC>:tabnew<cr>
 
 " Remap omni-complete
-inoremap <C-Space> <C-X><C-O>
+"inoremap <C-Space> <C-X><C-O>
 
 function TrimWhiteSpace()
   %s/\s*$//

@@ -73,3 +73,12 @@
 [submodule "bundle/MatchTag"]
 	path = bundle/MatchTag
 	url = git@github.com:gregsexton/MatchTag.git
+[submodule "bundle/syntax-vcl"]
+	path = bundle/syntax-vcl
+	url = git@github.com:pld-linux/vim-syntax-vcl.git
+[submodule "bundle/vim-multiple-cursors"]
+	path = bundle/vim-multiple-cursors
+	url = git@github.com:terryma/vim-multiple-cursors.git
+[submodule "bundle/vim-scala"]
+	path = bundle/vim-scala
+	url = git@github.com:derekwyatt/vim-scala.git

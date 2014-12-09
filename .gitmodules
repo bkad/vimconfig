@@ -40,18 +40,12 @@
 [submodule "bundle/vim-stylus"]
 	path = bundle/vim-stylus
 	url = https://github.com/bkad/vim-stylus.git
-[submodule "bundle/vim-golang"]
-	path = bundle/vim-golang
-	url = https://github.com/jnwhiteh/vim-golang.git
 [submodule "bundle/vim-clojure-static"]
 	path = bundle/vim-clojure-static
 	url = https://github.com/guns/vim-clojure-static.git
 [submodule "bundle/rainbow_parentheses"]
 	path = bundle/rainbow_parentheses
 	url = https://github.com/kien/rainbow_parentheses.vim.git
-[submodule "bundle/vim-foreplay"]
-	path = bundle/vim-foreplay
-	url = https://github.com/tpope/vim-foreplay.git
 [submodule "bundle/nerdcommenter"]
 	path = bundle/nerdcommenter
 	url = https://github.com/scrooloose/nerdcommenter.git
@@ -85,3 +79,15 @@
 [submodule "bundle/vim-terraform"]
 	path = bundle/vim-terraform
 	url = git@github.com:bkad/vim-terraform
+[submodule "bundle/vim-projectionist"]
+	path = bundle/vim-projectionist
+	url = https://github.com/tpope/vim-projectionist
+[submodule "bundle/vim-dispatch"]
+	path = bundle/vim-dispatch
+	url = git://github.com/tpope/vim-dispatch.git
+[submodule "bundle/vim-fireplace"]
+	path = bundle/vim-fireplace
+	url = git://github.com/tpope/vim-fireplace.git
+[submodule "bundle/vim-go"]
+	path = bundle/vim-go
+	url = https://github.com/fatih/vim-go.git

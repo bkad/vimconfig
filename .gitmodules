@@ -91,3 +91,6 @@
 [submodule "bundle/vim-go"]
 	path = bundle/vim-go
 	url = https://github.com/fatih/vim-go.git
+[submodule "bundle/vim-cjsx"]
+	path = bundle/vim-cjsx
+	url = git@github.com:mtscout6/vim-cjsx.git

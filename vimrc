@@ -134,3 +134,4 @@ if 'VIRTUAL_ENV' in os.environ:
 EOF
 endif
 
+au BufRead,BufNewFile,BufEnter /Users/kle/tubular/**/*.py setlocal ts=4 sts=4 sw=4 colorcolumn=100

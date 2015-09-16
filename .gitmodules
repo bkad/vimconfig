@@ -94,3 +94,9 @@
 [submodule "bundle/vim-cjsx"]
 	path = bundle/vim-cjsx
 	url = git@github.com:mtscout6/vim-cjsx.git
+[submodule "bundle/typescript-vim"]
+	path = bundle/typescript-vim
+	url = git@github.com:leafgarland/typescript-vim.git
+[submodule "bundle/vim-js-indent"]
+	path = bundle/vim-js-indent
+	url = git@github.com:jason0x43/vim-js-indent.git

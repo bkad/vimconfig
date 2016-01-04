@@ -12,7 +12,7 @@ set formatoptions=cqrol
 
 call pathogen#runtime_append_all_bundles()
 filetype off
-filetype plugin indent on
+"filetype plugin indent on
 syntax enable
 nmap <C-J> vip=
 set showmatch
@@ -38,9 +38,11 @@ hi Pmenu guifg=NONE guibg=#444444
 map <silent> w <Plug>CamelCaseMotion_w
 map <silent> W <Plug>CamelCaseMotion_b
 map <silent> e <Plug>CamelCaseMotion_e
+map <silent> E <Plug>CamelCaseMotion_ge
 sunmap w
 sunmap W
 sunmap e
+sunmap E
 
 " remap the Home key to behave like ^
 map <Home> ^
@@ -78,7 +80,7 @@ let g:ctrlp_working_path_mode = 0
 let g:ctrlp_follow_symlinks = 1
 set wildignore+=*.swp,*.swo,*.swn,*.pyc
 let g:ctrlp_custom_ignore = {
-  \ 'dir': '\.git$\|\.hg$\|\.svn$\|node_modules$\|\.sass\-cache$\|components$',
+  \ 'dir': '\.git$\|\.hg$\|\.svn$\|node_modules$\|\.sass\-cache$\|jspm_packages$',
   \ }
 
 
@@ -119,5 +121,9 @@ augroup go
 augroup END
 
 noremap <Space> :call NERDComment("n", "Toggle")<cr>
+
+let python_highlight_all = 1
+
+let mapleader = ','
 
 au BufRead,BufNewFile,BufEnter /Users/kle/tubular/**/*.py setlocal ts=4 sts=4 sw=4 colorcolumn=100

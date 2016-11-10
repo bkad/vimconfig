@@ -27,3 +27,8 @@ endfunction
 
 " automatically focus the window on new nerd tree tabs
 " autocmd BufNew * wincmd l
+
+
+" auto close scratch window after omnifunc preview
+"set completeopt-=preview
+"au CompleteDone * pclose

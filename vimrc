@@ -7,21 +7,21 @@ set shiftwidth=2
 set textwidth=110
 let &wrapmargin=&textwidth
 set formatoptions=cqrol
-"filetype plugin on
+filetype indent plugin on
 "set ofu=syntaxcomplete#Complete
 
-call pathogen#runtime_append_all_bundles()
-filetype off
-"filetype plugin indent on
+call pathogen#infect()
 syntax enable
 nmap <C-J> vip=
 set showmatch
+" Disable Toolbar
 set guioptions-=T
 set vb t_vb=
 set ruler
 set nohls
 set incsearch
 set number
+set relativenumber
 set guifont=Inconsolata:h16
 let g:zenburn_high_Contrast=1
 colorscheme zenburn
@@ -59,7 +59,7 @@ nmap <C-t> :tabnew<cr>
 imap <C-t> <ESC>:tabnew<cr>
 
 " Remap omni-complete
-"inoremap <C-Space> <C-X><C-O>
+inoremap <C-Space> <C-x><C-o>
 
 function TrimWhiteSpace()
   %s/\s*$//
@@ -71,17 +71,17 @@ map <F2> :call TrimWhiteSpace()<CR>
 map! <F2> :call TrimWhiteSpace()<CR>
 
 
-" auto close scratch window after omnifunc preview
-autocmd CursorMovedI * if pumvisible() == 0|pclose|endif
-autocmd InsertLeave * if pumvisible() == 0|pclose|endif
-
 " start ctrlp from the working directory
 let g:ctrlp_working_path_mode = 0
 let g:ctrlp_follow_symlinks = 1
 set wildignore+=*.swp,*.swo,*.swn,*.pyc
-let g:ctrlp_custom_ignore = {
-  \ 'dir': '\.git$\|\.hg$\|\.svn$\|node_modules$\|\.sass\-cache$\|jspm_packages$',
-  \ }
+"let g:ctrlp_user_command = ['.git/', 'git --git-dir=%s/.git ls-files -oc --exclude-standard']
+let g:ctrlp_user_command = {
+  \'types': {
+    \1: ['tubecore/', 'cd %s && find . -type f -not -name ".*" -not -name "." | egrep -v "\.git/|\.venv/|\.vagrant/|static\/public\/lib/|\.sass\-cache/|vendor/|node_modules/|patternlibrary/|\.pyc|static\/public\/.*\.js" | cut -c 3-'],
+    \2: ['.git/', 'git --git-dir=%s/.git ls-files -oc --exclude-standard'],
+  \}
+\}
 
 
 " colors from https://github.com/Flowdalic/zenburn-emacs/blob/master/zenburn-theme.el

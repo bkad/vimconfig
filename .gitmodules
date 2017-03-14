@@ -1,105 +1,81 @@
-[submodule "bundle/nerdtree"]
-	path = bundle/nerdtree
-	url = https://github.com/scrooloose/nerdtree.git
-[submodule "bundle/camelcasemotion"]
-	path = bundle/camelcasemotion
-	url = https://github.com/bkad/CamelCaseMotion.git
-[submodule "bundle/vim-indent-guides"]
-	path = bundle/vim-indent-guides
-	url = https://github.com/nathanaelkane/vim-indent-guides.git
-[submodule "bundle/vim-ruby"]
-	path = bundle/vim-ruby
-	url = https://github.com/vim-ruby/vim-ruby.git
-[submodule "bundle/surround"]
-	path = bundle/surround
-	url = https://github.com/tpope/vim-surround.git
-[submodule "bundle/repeat"]
-	path = bundle/repeat
-	url = https://github.com/tpope/vim-repeat.git
-[submodule "bundle/vim-coffee-script"]
-	path = bundle/vim-coffee-script
-	url = git://github.com/bkad/vim-coffee-script.git
-[submodule "bundle/mustache"]
-	path = bundle/mustache
-	url = git://github.com/juvenn/mustache.vim.git
-[submodule "bundle/fugitive"]
-	path = bundle/fugitive
-	url = https://github.com/tpope/vim-fugitive.git
-[submodule "bundle/vim-go-templates"]
-	path = bundle/vim-go-templates
-	url = https://github.com/cespare/vim-go-templates.git
-[submodule "bundle/vim-stylus"]
-	path = bundle/vim-stylus
-	url = https://github.com/bkad/vim-stylus.git
-[submodule "bundle/vim-clojure-static"]
-	path = bundle/vim-clojure-static
-	url = https://github.com/guns/vim-clojure-static.git
-[submodule "bundle/rainbow_parentheses"]
-	path = bundle/rainbow_parentheses
-	url = https://github.com/kien/rainbow_parentheses.vim.git
-[submodule "bundle/nerdcommenter"]
-	path = bundle/nerdcommenter
-	url = https://github.com/scrooloose/nerdcommenter.git
-[submodule "bundle/vim-toml"]
-	path = bundle/vim-toml
-	url = https://github.com/cespare/vim-toml.git
-[submodule "bundle/vim-markdown"]
-	path = bundle/vim-markdown
-	url = https://github.com/plasticboy/vim-markdown.git
-[submodule "bundle/vim-handlebars"]
-	path = bundle/vim-handlebars
-	url = https://github.com/nono/vim-handlebars.git
-[submodule "bundle/MatchTag"]
-	path = bundle/MatchTag
+[submodule "pack/bkad/start/CamelCaseMotion"]
+	path = pack/bkad/start/CamelCaseMotion
+	url = git@github.com:bkad/CamelCaseMotion.git
+[submodule "pack/bkad/start/vim-terraform"]
+	path = pack/bkad/start/vim-terraform
+	url = git@github.com:bkad/vim-terraform.git
+[submodule "pack/bkad/start/vim-fugitive"]
+	path = pack/bkad/start/vim-fugitive
+	url = git@github.com:tpope/vim-fugitive.git
+[submodule "pack/bkad/start/nerdcommenter"]
+	path = pack/bkad/start/nerdcommenter
+	url = git@github.com:scrooloose/nerdcommenter.git
+[submodule "pack/bkad/start/MatchTag"]
+	path = pack/bkad/start/MatchTag
 	url = git@github.com:gregsexton/MatchTag.git
-[submodule "bundle/syntax-vcl"]
-	path = bundle/syntax-vcl
-	url = git@github.com:pld-linux/vim-syntax-vcl.git
-[submodule "bundle/vim-multiple-cursors"]
-	path = bundle/vim-multiple-cursors
-	url = git@github.com:terryma/vim-multiple-cursors.git
-[submodule "bundle/vim-scala"]
-	path = bundle/vim-scala
-	url = git@github.com:derekwyatt/vim-scala.git
-[submodule "bundle/vim-terraform"]
-	path = bundle/vim-terraform
-	url = git@github.com:bkad/vim-terraform
-[submodule "bundle/vim-projectionist"]
-	path = bundle/vim-projectionist
-	url = https://github.com/tpope/vim-projectionist
-[submodule "bundle/vim-dispatch"]
-	path = bundle/vim-dispatch
-	url = git://github.com/tpope/vim-dispatch.git
-[submodule "bundle/vim-go"]
-	path = bundle/vim-go
-	url = https://github.com/fatih/vim-go.git
-[submodule "bundle/vim-cjsx"]
-	path = bundle/vim-cjsx
-	url = git@github.com:mtscout6/vim-cjsx.git
-[submodule "bundle/typescript-vim"]
-	path = bundle/typescript-vim
-	url = git@github.com:leafgarland/typescript-vim.git
-[submodule "bundle/vim-js-indent"]
-	path = bundle/vim-js-indent
-	url = git@github.com:jason0x43/vim-js-indent.git
-[submodule "bundle/python-syntax"]
-	path = bundle/python-syntax
+[submodule "pack/bkad/start/ctrlp.vim"]
+	path = pack/bkad/start/ctrlp.vim
+	url = git@github.com:ctrlpvim/ctrlp.vim.git
+[submodule "pack/bkad/start/nerdtree"]
+	path = pack/bkad/start/nerdtree
+	url = git@github.com:scrooloose/nerdtree.git
+[submodule "pack/bkad/start/python-syntax"]
+	path = pack/bkad/start/python-syntax
 	url = git@github.com:hdima/python-syntax.git
-[submodule "bundle/ctrlp"]
-	path = bundle/ctrlp
-	url = https://github.com/ctrlpvim/ctrlp.vim.git
-[submodule "bundle/tlib_vim"]
-	path = bundle/tlib_vim
-	url = https://github.com/tomtom/tlib_vim.git
-[submodule "bundle/vim-addon-mw-utils"]
-	path = bundle/vim-addon-mw-utils
-	url = https://github.com/MarcWeber/vim-addon-mw-utils.git
-[submodule "bundle/vim-snipmate"]
-	path = bundle/vim-snipmate
-	url = https://github.com/garbas/vim-snipmate.git
-[submodule "bundle/tsuquyomi"]
-	path = bundle/tsuquyomi
+[submodule "pack/bkad/vim-repeat"]
+	path = pack/bkad/vim-repeat
+	url = https://github.com/tpope/vim-repeat
+[submodule "pack/bkad/start/vim-snipmate"]
+	path = pack/bkad/start/vim-snipmate
+	url = git@github.com:garbas/vim-snipmate.git
+[submodule "pack/bkad/start/supertab"]
+	path = pack/bkad/start/supertab
+	url = git@github.com:ervandew/supertab.git
+[submodule "pack/bkad/start/vim-surround"]
+	path = pack/bkad/start/vim-surround
+	url = git@github.com:tpope/vim-surround.git
+[submodule "pack/bkad/start/tlib_vim"]
+	path = pack/bkad/start/tlib_vim
+	url = git@github.com:tomtom/tlib_vim.git
+[submodule "pack/bkad/start/vim-syntax-vcl"]
+	path = pack/bkad/start/vim-syntax-vcl
+	url = git@github.com:pld-linux/vim-syntax-vcl.git
+[submodule "pack/bkad/start/tsuquyomi"]
+	path = pack/bkad/start/tsuquyomi
 	url = git@github.com:Quramy/tsuquyomi.git
-[submodule "bundle/vimproc"]
-	path = bundle/vimproc
-	url = git@github.com:Shougo/vimproc.vim.git
+[submodule "pack/bkad/start/typescript-vim"]
+	path = pack/bkad/start/typescript-vim
+	url = git@github.com:leafgarland/typescript-vim.git
+[submodule "pack/bkad/start/vim-addon-mw-utils"]
+	path = pack/bkad/start/vim-addon-mw-utils
+	url = git@github.com:MarcWeber/vim-addon-mw-utils.git
+[submodule "pack/bkad/start/vim-coffee-script"]
+	path = pack/bkad/start/vim-coffee-script
+	url = git@github.com:bkad/vim-coffee-script.git
+[submodule "pack/bkad/start/vim-dispatch"]
+	path = pack/bkad/start/vim-dispatch
+	url = git@github.com:tpope/vim-dispatch.git
+[submodule "pack/bkad/start/vim-go"]
+	path = pack/bkad/start/vim-go
+	url = git@github.com:fatih/vim-go.git
+[submodule "pack/bkad/start/vim-go-templates"]
+	path = pack/bkad/start/vim-go-templates
+	url = git@github.com:cespare/vim-go-templates.git
+[submodule "pack/bkad/start/vim-indent-guides"]
+	path = pack/bkad/start/vim-indent-guides
+	url = git@github.com:nathanaelkane/vim-indent-guides.git
+[submodule "pack/bkad/start/vim-js-indent"]
+	path = pack/bkad/start/vim-js-indent
+	url = git@github.com:jason0x43/vim-js-indent.git
+[submodule "pack/bkad/start/vim-markdown"]
+	path = pack/bkad/start/vim-markdown
+	url = git@github.com:plasticboy/vim-markdown.git
+[submodule "pack/bkad/start/vim-multiple-cursors"]
+	path = pack/bkad/start/vim-multiple-cursors
+	url = git@github.com:terryma/vim-multiple-cursors.git
+[submodule "pack/bkad/start/vim-projectionist"]
+	path = pack/bkad/start/vim-projectionist
+	url = git@github.com:tpope/vim-projectionist.git
+[submodule "pack/bkad/start/vim-toml"]
+	path = pack/bkad/start/vim-toml
+	url = git@github.com:cespare/vim-toml.git

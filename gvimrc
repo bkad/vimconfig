@@ -1,12 +1,6 @@
-" Colorcolumn settings, 7.3 only
-"set colorcolumn=110
 let &colorcolumn = &wrapmargin
 hi ColorColumn guibg=#4E4E4E
 hi ExtraWhitespace guibg=#CCCCCC
-"auto open NERDtree on new tabs
-"autocmd VimEnter * NERDTree
-"autocmd BufEnter * NERDTreeMirror
-"autocmd VimEnter * wincmd p
 let g:NERDTreeChDirMode=2 " change pwd when NERDTree root changes
 let g:NERDChristmasTree=1 " more colorful NERDTree
 IndentGuidesToggle
@@ -24,11 +18,3 @@ function! s:CloseIfOnlyNerdTreeLeft()
     endif
   endif
 endfunction
-
-" automatically focus the window on new nerd tree tabs
-" autocmd BufNew * wincmd l
-
-
-" auto close scratch window after omnifunc preview
-"set completeopt-=preview
-"au CompleteDone * pclose

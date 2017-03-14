@@ -10,7 +10,6 @@ set formatoptions=cqrol
 filetype indent plugin on
 "set ofu=syntaxcomplete#Complete
 
-call pathogen#infect()
 syntax enable
 nmap <C-J> vip=
 set showmatch
@@ -35,6 +34,12 @@ hi VisualNOS guifg=NONE guibg=#444444
 "adjust YCM menu
 hi Pmenu guifg=NONE guibg=#444444
 
+omap <silent> iw <Plug>CamelCaseMotion_iw
+xmap <silent> iw <Plug>CamelCaseMotion_iw
+omap <silent> ib <Plug>CamelCaseMotion_ib
+xmap <silent> ib <Plug>CamelCaseMotion_ib
+omap <silent> ie <Plug>CamelCaseMotion_ie
+xmap <silent> ie <Plug>CamelCaseMotion_ie
 map <silent> w <Plug>CamelCaseMotion_w
 map <silent> W <Plug>CamelCaseMotion_b
 map <silent> e <Plug>CamelCaseMotion_e
@@ -84,36 +89,6 @@ let g:ctrlp_user_command = {
 \}
 
 
-" colors from https://github.com/Flowdalic/zenburn-emacs/blob/master/zenburn-theme.el
-" red-4
-" blue+1
-" green+2
-" yellow-2
-" magenta
-" orange
-" blue-1
-" green+1
-" red+1
-" blue+1
-" yellow
-" FIRST cyan
-let g:rbpt_colorpairs = [
-    \ ['darkred',   '#8c5353'],
-    \ ['darkcyan',  '#94bff3'],
-    \ ['darkgreen', '#9fc59f'],
-    \ ['darkblue',  '#d0bf8f'],
-    \ ['gray',      '#dc8cc3'],
-    \ ['darkred',   '#dfaf8f'],
-    \ ['gray',      '#7cb8bb'],
-    \ ['darkred',   '#8fb28f'],
-    \ ['darkcyan',  '#dca3a3'],
-    \ ['darkgreen', '#94bff3'],
-    \ ['darkblue',  '#f0dfaf'],
-    \ ['gray',      '#93e0e3'],
-    \ ]
-
-let g:rbpt_max = len(g:rbpt_colorpairs)
-
 " Go specific settings
 augroup go
   au!
@@ -127,3 +102,7 @@ let python_highlight_all = 1
 let mapleader = ','
 
 au BufRead,BufNewFile,BufEnter /Users/kle/tubular/**/*.py setlocal ts=4 sts=4 sw=4 colorcolumn=100
+autocmd FileType typescript setlocal completeopt+=menu,preview
+
+" Need this for vim commit editing to make backspace work for some reason
+set backspace=indent,eol,start

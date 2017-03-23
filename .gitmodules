@@ -40,9 +40,6 @@
 [submodule "pack/bkad/start/vim-syntax-vcl"]
 	path = pack/bkad/start/vim-syntax-vcl
 	url = git@github.com:pld-linux/vim-syntax-vcl.git
-[submodule "pack/bkad/start/tsuquyomi"]
-	path = pack/bkad/start/tsuquyomi
-	url = git@github.com:Quramy/tsuquyomi.git
 [submodule "pack/bkad/start/typescript-vim"]
 	path = pack/bkad/start/typescript-vim
 	url = git@github.com:leafgarland/typescript-vim.git
@@ -79,3 +76,9 @@
 [submodule "pack/bkad/start/vim-toml"]
 	path = pack/bkad/start/vim-toml
 	url = git@github.com:cespare/vim-toml.git
+[submodule "pack/bkad/start/tsuquyomi"]
+	path = pack/bkad/start/tsuquyomi
+	url = git@github.com:bkad/tsuquyomi.git
+[submodule "pack/bkad/start/editerconfig-vim"]
+	path = pack/bkad/start/editerconfig-vim
+	url = git@github.com:editorconfig/editorconfig-vim.git

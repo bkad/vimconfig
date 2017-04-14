@@ -22,9 +22,6 @@
 [submodule "pack/bkad/start/python-syntax"]
 	path = pack/bkad/start/python-syntax
 	url = git@github.com:hdima/python-syntax.git
-[submodule "pack/bkad/vim-repeat"]
-	path = pack/bkad/vim-repeat
-	url = https://github.com/tpope/vim-repeat
 [submodule "pack/bkad/start/vim-snipmate"]
 	path = pack/bkad/start/vim-snipmate
 	url = git@github.com:garbas/vim-snipmate.git

@@ -79,3 +79,6 @@
 [submodule "pack/bkad/start/editerconfig-vim"]
 	path = pack/bkad/start/editerconfig-vim
 	url = git@github.com:editorconfig/editorconfig-vim.git
+[submodule "pack/bkad/start/vim-repeat"]
+	path = pack/bkad/start/vim-repeat
+	url = https://github.com/tpope/vim-repeat

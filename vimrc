@@ -30,6 +30,8 @@ hi IncSearch guifg=NONE guibg=#545449
 hi Search    guifg=NONE guibg=#545449
 hi Visual    guifg=NONE guibg=#444444
 hi VisualNOS guifg=NONE guibg=#444444
+hi IndentGuidesOdd  guibg=#353535
+hi IndentGuidesEven guibg=#494949
 
 "adjust YCM menu
 hi Pmenu guifg=NONE guibg=#444444
@@ -63,6 +65,10 @@ imap <C-tab> <ESC>:tabnext<cr>i
 nmap <C-t> :tabnew<cr>
 imap <C-t> <ESC>:tabnew<cr>
 
+map <C-p> :FZF<cr>
+nmap <C-p> :FZF<cr>
+imap <C-p> <ESC>:FZF<cr>
+
 " Remap omni-complete
 inoremap <C-Space> <C-x><C-o>
 
@@ -76,18 +82,8 @@ map <F2> :call TrimWhiteSpace()<CR>
 map! <F2> :call TrimWhiteSpace()<CR>
 
 
-" start ctrlp from the working directory
-let g:ctrlp_working_path_mode = 0
-let g:ctrlp_follow_symlinks = 1
 set wildignore+=*.swp,*.swo,*.swn,*.pyc
-"let g:ctrlp_user_command = ['.git/', 'git --git-dir=%s/.git ls-files -oc --exclude-standard']
-let g:ctrlp_user_command = {
-  \'types': {
-    \1: ['tubecore/', 'cd %s && find . -type f -not -name ".*" -not -name "." | egrep -v "\.git/|\.venv/|\.vagrant/|static\/public\/lib/|\.sass\-cache/|vendor/|node_modules/|patternlibrary/|\.pyc|static\/public\/.*\.js" | cut -c 3-'],
-    \2: ['.git/', 'git --git-dir=%s/.git ls-files -oc --exclude-standard'],
-  \}
-\}
-
+set rtp+=/usr/local/opt/fzf
 
 " Go specific settings
 augroup go
@@ -101,8 +97,15 @@ let python_highlight_all = 1
 
 let mapleader = ','
 
-au BufRead,BufNewFile,BufEnter /Users/kle/tubular/**/*.py setlocal ts=4 sts=4 sw=4 colorcolumn=100
 autocmd FileType typescript setlocal completeopt+=menu,preview
+
+" enable True Color support in terminal
+set termguicolors
+let g:indent_guides_enable_on_vim_startup = 1
+let &colorcolumn = &wrapmargin
+hi ColorColumn guibg=#4E4E4E
+
+let g:indent_guides_auto_colors = 0
 
 " Need this for vim commit editing to make backspace work for some reason
 set backspace=indent,eol,start

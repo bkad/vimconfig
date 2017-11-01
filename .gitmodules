@@ -13,9 +13,6 @@
 [submodule "pack/bkad/start/MatchTag"]
 	path = pack/bkad/start/MatchTag
 	url = git@github.com:gregsexton/MatchTag.git
-[submodule "pack/bkad/start/ctrlp.vim"]
-	path = pack/bkad/start/ctrlp.vim
-	url = git@github.com:ctrlpvim/ctrlp.vim.git
 [submodule "pack/bkad/start/nerdtree"]
 	path = pack/bkad/start/nerdtree
 	url = git@github.com:scrooloose/nerdtree.git
@@ -82,3 +79,9 @@
 [submodule "pack/bkad/start/vim-repeat"]
 	path = pack/bkad/start/vim-repeat
 	url = https://github.com/tpope/vim-repeat
+[submodule "pack/bkad/start/ropevim"]
+	path = pack/bkad/start/ropevim
+	url = git@github.com:python-rope/ropevim.git
+[submodule "pack/bkad/start/fzf"]
+	path = pack/bkad/start/fzf
+	url = https://github.com/junegunn/fzf.vim
